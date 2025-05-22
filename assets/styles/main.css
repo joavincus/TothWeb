@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
 .about{
     display: flex;
     flex-direction: column;
@@ -10,19 +12,47 @@
     align-items: center;
     justify-content: center;
     height: calc(100vh - 100px);
-
 }
 
+
+
+
 p{
+    font-size: 1.8em;
     text-align: center;
-   
+    padding: 40px;
+
+    @media screen and (max-width: 760px) {font-size: 1.3em;}
+}
+
+ul{
+    padding: 40px;
 }
 
     li{
         text-align: center;
         list-style: none;
         margin-bottom: 35px;
-        margin-right: 40px;
+        color: #333;
+        font-weight: 100;
+        @media screen and (max-width: 760px) {font-size: 1.1em;}
+    }
+
+    i{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid #333;
+        color: red;
+        transition: 0.2s ease-in-out;
+        font-family: "Unica One", serif;
+        @media screen and (max-width: 760px) {font-size: 0.9em;}
+    }
+
+    i:hover{
+    
+        cursor: pointer;
+        background-color: #333;
     }
     
 
